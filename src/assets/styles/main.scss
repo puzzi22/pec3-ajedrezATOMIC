@@ -21,6 +21,19 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  box-sizing: border-box;
+}
+
+@layer components {
+  .card {
+    @apply ml-4 mr-4 flex items-center gap-4 p-4 sm:w-72 sm:flex-col sm:gap-2 sm:border sm:border-gray-200;
+  }
+  .social-network__link {
+    @apply mr-4 text-white hover:text-wood;
+  }
+}
+
 @import "../../../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 
 /**

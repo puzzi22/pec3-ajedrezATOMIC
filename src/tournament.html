@@ -16,10 +16,7 @@
         />
     </head>
     <body>
-        <include
-            class="club-header relative z-20"
-            src="./views/header.html"
-        ></include>
+        <include class="relative z-20" src="./views/header.html"></include>
 
         <div
             class="relative flex h-full w-full flex-col justify-center bg-cover bg-top object-cover"
@@ -30,7 +27,7 @@
         >
             <div class="absolute inset-0 bg-black bg-opacity-50"></div>
             <h1
-                class="relative top-40 z-10 mb-20 px-8 py-8 text-center text-4xl font-bold uppercase leading-loose text-gold sm:text-6xl sm:leading-tight"
+                class="relative top-40 z-10 mb-20 px-8 py-8 text-center text-4xl font-bold uppercase leading-loose text-[#daa520] sm:text-6xl sm:leading-tight"
             >
                 Poblenou Chess Club
                 <span class="block"> Tournament 2023 </span>
@@ -39,26 +36,22 @@
         <section class="rules mx-auto w-5/6 space-y-12 px-8 md:w-5/6">
             <h2 class="mb-16 mt-12 text-center text-4xl">Tournament Rules</h2>
             <div
-                class="rules__description mx-auto grid w-10/12 grid-cols-3 gap-x-8 gap-y-12 md:w-11/12"
+                class="mx-auto grid w-10/12 grid-cols-3 gap-x-8 gap-y-12 md:w-11/12"
             >
-                <figure
-                    class="rules__quote col-span-3 self-center md:col-span-1"
-                >
-                    <blockquote
-                        class="rules__blockquote mb-3 rounded-md bg-gray-100 p-4"
-                    >
-                        <p class="rules__blockquote-text text-lg">
+                <figure class="col-span-3 self-center md:col-span-1">
+                    <blockquote class="mb-3 rounded-md bg-gray-100 p-4">
+                        <p class="text-lg">
                             "Winning the tournament was a thrilling experience.
                             The competition was fierce, but the camaraderie and
                             sportsmanship made it unforgettable."
                         </p>
                     </blockquote>
-                    <figcaption class="rules__blockquote-fig pl-4 text-lg">
+                    <figcaption class="pl-4 text-lg">
                         —Jordi Miró, last year's winner
                     </figcaption>
                 </figure>
                 <p
-                    class="rules__text1 col-span-3 text-xl leading-relaxed md:col-span-2 md:col-start-2"
+                    class="col-span-3 text-xl leading-relaxed md:col-span-2 md:col-start-2"
                 >
                     This exciting event brings together chess enthusiasts from
                     all skill levels to celebrate the love of the game. Over two
@@ -69,41 +62,14 @@
                     incredible opportunity to showcase your skills and connect
                     with the local chess community.
                 </p>
-                <ol
-                    class="rules__list col-span-3 mx-auto ml-16 list-decimal space-y-4 text-lg"
-                >
-                    <li class="rules__list-item">
-                        The tournament is open to players of all ages and skill
-                        levels residing in the Poblenou neighborhood.
-                    </li>
-                    <li class="rules__list-item">
-                        Participants must register for the tournament by
-                        submitting their full name, contact information, and a
-                        brief summary of their chess experience through the
-                        online registration form. The form will be online soon.
-                    </li>
-                    <li class="rules__list-item">
-                        Registration is on a first-come, first-served basis,
-                        with a limited number of spots available. Early
-                        registration is highly encouraged to secure a place in
-                        the competition.
-                    </li>
-                    <li class="rules__list-item">
-                        A nominal registration fee of €10 is required to confirm
-                        your participation. Payment details will be provided
-                        upon submission of the registration form.
-                    </li>
-                    <li class="rules__list-item">
-                        Participants must adhere to the tournament schedule and
-                        rules, which will be provided to all registered players
-                        before the event.
-                    </li>
-                </ol>
-                <div class="rules__text3 col-span-3 space-y-4">
-                    <h3 class="rules__h3 text-3xl">
+
+                <include src="./views/rules.html"></include>
+
+                <div class="rcol-span-3 space-y-4">
+                    <h3 class="text-3xl">
                         Master the Board: Triumph &amp; Treasure Awaits!
                     </h3>
-                    <p class="rules__p3 text-xl leading-relaxed">
+                    <p class="text-xl leading-relaxed">
                         The 2023 champion of the Poblenou Chess Club Tournament
                         will not only earn the prestigious title but also
                         receive a prize. The winner will be awarded prize of
@@ -119,33 +85,6 @@
         </section>
 
         <h2 class="mb-16 mt-24 text-center text-4xl">Tournament Draw</h2>
-
-        <!-- <section class="max-w-5/12 relative mx-auto block">
-            <picture>
-                <source
-                    srcset="
-                        ./assets/images/draw.jpeg?as=webp&width=800   800w,
-                        ./assets/images/draw.jpeg?as=webp&width=1200 1200w
-                    "
-                    sizes="(max-width: 800px) 800px, 1200px"
-                    type="image/webp"
-                />
-                <img
-                    class="relative z-10 mx-auto max-w-6xl"
-                    src="./assets/images/draw.jpeg"
-                    srcset="
-                        ./assets/images/draw.jpeg?width=600   600w,
-                        ./assets/images/draw.jpeg?width=1200 1200w
-                    "
-                    sizes="(max-width: 800px) 600px, 1200px"
-                    alt="Tournament Draw"
-                    loading="lazy"
-                />
-                <div
-                    class="absolute inset-0 z-20 mx-auto max-w-6xl bg-yellow-500 opacity-20"
-                ></div>
-            </picture>
-        </section> -->
 
         <section class="max-w-5/12 relative mx-10 md:mx-40">
             <picture>
@@ -178,233 +117,10 @@
             <h2 class="mb-16 mt-12 text-center text-4xl">
                 Tournament Schedule
             </h2>
-            <table class="m-auto border-collapse">
-                <thead>
-                    <tr class="text-center">
-                        <th
-                            class="hidden h-24 w-24 border border-black bg-chess3 text-white md:table-cell"
-                        ></th>
-                        <th
-                            class="hidden h-24 w-24 border border-black bg-chess3 text-white md:table-cell"
-                        ></th>
-                        <th
-                            class="h-24 w-24 border border-black bg-chess3 font-bold text-white"
-                        >
-                            Time
-                        </th>
-                        <th
-                            class="h-24 w-24 border border-black bg-chess3 font-bold text-white"
-                        >
-                            Friday, 10.09.2023
-                        </th>
-                        <th
-                            class="h-24 w-24 border border-black bg-chess3 font-bold text-white"
-                        >
-                            Saturday, 11.09.2023
-                        </th>
-                        <th
-                            class="hidden h-24 w-24 border border-black bg-chess3 text-white md:table-cell"
-                        ></th>
-                        <th
-                            class="hidden h-24 w-24 border border-black bg-chess3 text-white md:table-cell"
-                        ></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="text-center">
-                        <td
-                            class="hidden h-24 w-24 border border-black bg-chess2 md:table-cell"
-                        ></td>
-                        <td
-                            class="hidden h-24 w-24 border border-black bg-chess1 md:table-cell"
-                        ></td>
-                        <td
-                            class="h-24 w-24 border border-black bg-chess2 font-bold"
-                        >
-                            11:30am
-                        </td>
-                        <td
-                            class="h-24 w-24 border border-black bg-chess1"
-                        ></td>
-                        <td
-                            class="h-24 w-24 border border-black bg-chess2 font-bold"
-                        >
-                            Round 3 (Semi-Finals)
-                        </td>
-                        <td
-                            class="hidden h-24 w-24 border border-black bg-chess1 md:table-cell"
-                        ></td>
-                        <td
-                            class="hidden h-24 w-24 border border-black bg-chess2 md:table-cell"
-                        ></td>
-                    </tr>
-                    <tr class="text-center">
-                        <td
-                            class="hidden h-24 w-24 border border-black bg-chess1 md:table-cell"
-                        ></td>
-                        <td
-                            class="hidden h-24 w-24 border border-black bg-chess2 md:table-cell"
-                        ></td>
-                        <td
-                            class="h-24 w-24 border border-black bg-chess1 font-bold"
-                        >
-                            2:00pm
-                        </td>
-                        <td
-                            class="h-24 w-24 border border-black bg-chess2"
-                        ></td>
-                        <td
-                            class="h-24 w-24 border border-black bg-chess1 font-bold"
-                        >
-                            Round 4 (Finals)
-                        </td>
-                        <td
-                            class="hidden h-24 w-24 border border-black bg-chess2 md:table-cell"
-                        ></td>
-                        <td
-                            class="hidden h-24 w-24 border border-black bg-chess1 md:table-cell"
-                        ></td>
-                    </tr>
-                    <tr class="text-center">
-                        <td
-                            class="hidden h-24 w-24 border border-black bg-chess2 md:table-cell"
-                        ></td>
-                        <td
-                            class="hidden h-24 w-24 border border-black bg-chess1 md:table-cell"
-                        ></td>
-                        <td
-                            class="h-24 w-24 border border-black bg-chess2 font-bold"
-                        >
-                            4:00pm (approx)
-                        </td>
-                        <td
-                            class="h-24 w-24 border border-black bg-chess1"
-                        ></td>
-                        <td
-                            class="h-24 w-24 border border-black bg-chess2 font-bold"
-                        >
-                            Awards ceremony
-                        </td>
-                        <td
-                            class="hidden h-24 w-24 border border-black bg-chess1 md:table-cell"
-                        ></td>
-                        <td
-                            class="hidden h-24 w-24 border border-black bg-chess2 md:table-cell"
-                        ></td>
-                    </tr>
-                    <tr class="text-center">
-                        <td
-                            class="hidden h-24 w-24 border border-black bg-chess1 md:table-cell"
-                        ></td>
-                        <td
-                            class="hidden h-24 w-24 border border-black bg-chess2 md:table-cell"
-                        ></td>
-                        <td
-                            class="h-24 w-24 border border-black bg-chess1 font-bold"
-                        >
-                            4:30pm-5:00pm
-                        </td>
-                        <td
-                            class="h-24 w-24 border border-black bg-chess2 font-bold"
-                        >
-                            Check-In
-                        </td>
-                        <td
-                            class="h-24 w-24 border border-black bg-chess1"
-                        ></td>
-                        <td
-                            class="hidden h-24 w-24 border border-black bg-chess2 md:table-cell"
-                        ></td>
-                        <td
-                            class="hidden h-24 w-24 border border-black bg-chess1 md:table-cell"
-                        ></td>
-                    </tr>
-                    <tr class="text-center">
-                        <td
-                            class="hidden h-24 w-24 border border-black bg-chess2 md:table-cell"
-                        ></td>
-                        <td
-                            class="hidden h-24 w-24 border border-black bg-chess1 md:table-cell"
-                        ></td>
-                        <td
-                            class="h-24 w-24 border border-black bg-chess2 font-bold"
-                        >
-                            5:00pm
-                        </td>
-                        <td
-                            class="h-24 w-24 border border-black bg-chess1 font-bold"
-                        >
-                            Meeting
-                        </td>
-                        <td
-                            class="h-24 w-24 border border-black bg-chess2"
-                        ></td>
-                        <td
-                            class="hidden h-24 w-24 border border-black bg-chess1 md:table-cell"
-                        ></td>
-                        <td
-                            class="hidden h-24 w-24 border border-black bg-chess2 md:table-cell"
-                        ></td>
-                    </tr>
-                    <tr class="text-center">
-                        <td
-                            class="hidden h-24 w-24 border border-black bg-chess1 md:table-cell"
-                        ></td>
-                        <td
-                            class="hidden h-24 w-24 border border-black bg-chess2 md:table-cell"
-                        ></td>
-                        <td
-                            class="h-24 w-24 border border-black bg-chess1 font-bold"
-                        >
-                            5:30pm
-                        </td>
-                        <td
-                            class="h-24 w-24 border border-black bg-chess2 font-bold"
-                        >
-                            Round 1
-                        </td>
-                        <td
-                            class="h-24 w-24 border border-black bg-chess1"
-                        ></td>
-                        <td
-                            class="hidden h-24 w-24 border border-black bg-chess2 md:table-cell"
-                        ></td>
-                        <td
-                            class="hidden h-24 w-24 border border-black bg-chess1 md:table-cell"
-                        ></td>
-                    </tr>
-                    <tr class="text-center">
-                        <td
-                            class="hidden h-24 w-24 border border-black bg-chess2 md:table-cell"
-                        ></td>
-                        <td
-                            class="hidden h-24 w-24 border border-black bg-chess1 md:table-cell"
-                        ></td>
-                        <td
-                            class="h-24 w-24 border border-black bg-chess2 font-bold"
-                        >
-                            6:00pm
-                        </td>
-                        <td
-                            class="h-24 w-24 border border-black bg-chess1 font-bold"
-                        >
-                            Round 2
-                        </td>
-                        <td
-                            class="h-24 w-24 border border-black bg-chess2"
-                        ></td>
-                        <td
-                            class="hidden h-24 w-24 border border-black bg-chess1 md:table-cell"
-                        ></td>
-                        <td
-                            class="hidden h-24 w-24 border border-black bg-chess2 md:table-cell"
-                        ></td>
-                    </tr>
-                </tbody>
-            </table>
+            <include src="./views/schedule.html"></include>
         </section>
 
-        <include class="club-footer" src="./views/footer.html"></include>
+        <include src="./views/footer.html"></include>
         <script async type="module" src="./assets/scripts/main.js"></script>
     </body>
 </html>

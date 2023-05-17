@@ -17,7 +17,7 @@
         />
     </head>
     <body>
-        <include class="club-header" src="./views/header.html"></include>
+        <include src="./views/header.html"></include>
         <div class="my-5 flex flex-col items-center">
             <h1 class="mb-8 py-8 text-3xl sm:text-h1">
                 Poblenou Chess Club Members
@@ -25,10 +25,8 @@
             <div
                 class="m-4 mb-8 flex flex-wrap justify-center gap-2 sm:m-4 sm:gap-4 md:mx-4 md:my-0 md:gap-8 lg:gap-16"
             >
-                <div
-                    class="ml-4 mr-4 flex items-center gap-4 p-4 sm:w-72 sm:flex-col sm:gap-2 sm:border sm:border-gray-200"
-                >
-                    <picture class="member-card__picture w-1/2 sm:w-full">
+                <div class="card">
+                    <picture class="w-1/2 sm:w-full">
                         <source
                             srcset="
                                 ./assets/images/member1.jpg?as=webp&width=400 400w,
@@ -45,7 +43,6 @@
                             "
                             sizes="(max-width: 600px) 400px, 800px"
                             alt="Justin Shaifer"
-                            class="member-card__img"
                             loading="lazy"
                         />
                     </picture>
@@ -64,7 +61,7 @@
                         <div class="mt-3 sm:text-center">
                             <a
                                 href="#"
-                                class="text-base font-bold hover:text-secondary-lighter hover:underline"
+                                class="text-base font-bold hover:text-pale-grey hover:underline"
                             >
                                 <i class="bi bi-envelope ml-4"></i>
                                 Write me!
@@ -73,10 +70,8 @@
                     </div>
                 </div>
 
-                <div
-                    class="ml-4 mr-4 flex items-center gap-4 p-4 sm:w-72 sm:flex-col sm:gap-2 sm:border sm:border-gray-200"
-                >
-                    <picture class="member-card__picture w-1/2 sm:w-full">
+                <div class="card">
+                    <picture class="w-1/2 sm:w-full">
                         <source
                             srcset="
                                 ./assets/images/member2.jpg?as=webp&width=400 400w,
@@ -93,7 +88,6 @@
                             "
                             sizes="(max-width: 600px) 400px, 800px"
                             alt="Arnau Miró"
-                            class="member-card__img"
                             loading="lazy"
                         />
                     </picture>
@@ -112,7 +106,7 @@
                         <div class="mt-3 sm:text-center">
                             <a
                                 href="#"
-                                class="text-base font-bold hover:text-secondary-lighter hover:underline"
+                                class="text-base font-bold hover:text-pale-grey hover:underline"
                             >
                                 <i class="bi bi-envelope ml-4"></i>
                                 Write me!
@@ -121,10 +115,8 @@
                     </div>
                 </div>
 
-                <div
-                    class="ml-4 mr-4 flex items-center gap-4 p-4 sm:w-72 sm:flex-col sm:gap-2 sm:border sm:border-gray-200"
-                >
-                    <picture class="member-card__picture w-1/2 sm:w-full">
+                <div class="card">
+                    <picture class="w-1/2 sm:w-full">
                         <source
                             srcset="
                                 ./assets/images/member3.jpg?as=webp&width=400 400w,
@@ -141,7 +133,6 @@
                             "
                             sizes="(max-width: 600px) 400px, 800px"
                             alt="Laia Casals"
-                            class="member-card__img"
                             loading="lazy"
                         />
                     </picture>
@@ -161,7 +152,7 @@
                         <div class="mt-3 sm:text-center">
                             <a
                                 href="#"
-                                class="text-base font-bold hover:text-secondary-lighter hover:underline"
+                                class="text-base font-bold hover:text-pale-grey hover:underline"
                             >
                                 <i class="bi bi-envelope ml-4"></i>
                                 Write me!
@@ -170,10 +161,8 @@
                     </div>
                 </div>
 
-                <div
-                    class="ml-4 mr-4 flex items-center gap-4 p-4 sm:w-72 sm:flex-col sm:gap-2 sm:border sm:border-gray-200"
-                >
-                    <picture class="member-card__picture w-1/2 sm:w-full">
+                <div class="card">
+                    <picture class="w-1/2 sm:w-full">
                         <source
                             srcset="
                                 ./assets/images/member4.jpg?as=webp&width=400 400w,
@@ -190,7 +179,6 @@
                             "
                             sizes="(max-width: 600px) 400px, 800px"
                             alt="Martí Fuster"
-                            class="member-card__img"
                             loading="lazy"
                         />
                     </picture>
@@ -209,7 +197,7 @@
                         <div class="mt-3 sm:text-center">
                             <a
                                 href="#"
-                                class="text-base font-bold hover:text-secondary-lighter hover:underline"
+                                class="text-base font-bold hover:text-pale-grey hover:underline"
                             >
                                 <i class="bi bi-envelope ml-4"></i>
                                 Write me!
@@ -218,10 +206,8 @@
                     </div>
                 </div>
 
-                <div
-                    class="ml-4 mr-4 flex items-center gap-4 p-4 sm:w-72 sm:flex-col sm:gap-2 sm:border sm:border-gray-200"
-                >
-                    <picture class="member-card__picture w-1/2 sm:w-full">
+                <div class="card">
+                    <picture class="w-1/2 sm:w-full">
                         <source
                             srcset="
                                 ./assets/images/member5.jpg?as=webp&width=400 400w,
@@ -238,7 +224,6 @@
                             "
                             sizes="(max-width: 600px) 400px, 800px"
                             alt="Júlia Pons"
-                            class="member-card__img"
                             loading="lazy"
                         />
                     </picture>
@@ -258,7 +243,7 @@
                         <div class="mt-3 sm:text-center">
                             <a
                                 href="#"
-                                class="text-base font-bold hover:text-secondary-lighter hover:underline"
+                                class="text-base font-bold hover:text-pale-grey hover:underline"
                             >
                                 <i class="bi bi-envelope ml-4"></i>
                                 Write me!
@@ -267,10 +252,8 @@
                     </div>
                 </div>
 
-                <div
-                    class="ml-4 mr-4 flex items-center gap-4 p-4 sm:w-72 sm:flex-col sm:gap-2 sm:border sm:border-gray-200"
-                >
-                    <picture class="member-card__picture w-1/2 sm:w-full">
+                <div class="card">
+                    <picture class="w-1/2 sm:w-full">
                         <source
                             srcset="
                                 ./assets/images/member6.jpg?as=webp&width=400 400w,
@@ -287,7 +270,6 @@
                             "
                             sizes="(max-width: 600px) 400px, 800px"
                             alt="Enric Rovira"
-                            class="member-card__img"
                             loading="lazy"
                         />
                     </picture>
@@ -307,7 +289,7 @@
                         <div class="mt-3 sm:text-center">
                             <a
                                 href="#"
-                                class="text-base font-bold hover:text-secondary-lighter hover:underline"
+                                class="text-base font-bold hover:text-pale-grey hover:underline"
                             >
                                 <i class="bi bi-envelope ml-4"></i>
                                 Write me!
@@ -318,7 +300,7 @@
             </div>
         </div>
 
-        <include class="club-footer" src="./views/footer.html"></include>
+        <include src="./views/footer.html"></include>
         <script async type="module" src="./assets/scripts/main.js"></script>
     </body>
 </html>
