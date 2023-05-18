@@ -7,7 +7,7 @@
  * Import variables
  */
 
-@import "variables";
+// @import "variables";
 
 /**
  * Import npm dependencies
@@ -21,16 +21,9 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  box-sizing: border-box;
-}
-
-@layer components {
-  .card {
-    @apply ml-4 mr-4 flex items-center gap-4 p-4 sm:w-72 sm:flex-col sm:gap-2 sm:border sm:border-gray-200;
-  }
-  .social-network__link {
-    @apply mr-4 text-white hover:text-wood;
+@layer base {
+  * {
+    @apply box-border;
   }
 }
 
@@ -41,7 +34,8 @@
  * It's a best practice to use a different partial for each page
  */
 
-@import "layouts/home";
-@import "layouts/styles"; /**
+@import "layouts/card";
+@import "layouts/social-network__link";
+/**
  * Do NOT include anything else in this file!
  */

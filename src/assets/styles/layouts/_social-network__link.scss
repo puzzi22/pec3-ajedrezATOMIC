@@ -1,0 +1,5 @@
+@layer components {
+  .social-network__link {
+    @apply mr-4 text-white hover:text-wood;
+  }
+}
