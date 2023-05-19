@@ -1,6 +1,6 @@
 {
   "name": "ajedrez-atomic",
-  "version": "1.0",
+  "version": "3.6.0",
   "private": true,
   "description": "PEC 3",
   "scripts": {
